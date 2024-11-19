@@ -1,5 +1,5 @@
 // import { Routes, Route } from "react-router-dom";
-import HomePage from "./Homepage";
+import HomePage from "../pages/homepage/Homepage";
 // import Reservation from "./Reservation";
 
 function Main() {

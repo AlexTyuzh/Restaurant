@@ -1,0 +1,132 @@
+.booking-img {
+  width: 200px;
+}
+
+.booking-page {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  padding: 40px 0 40px 0;
+  gap: 20px;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), no-repeat,
+    url("../../images/restaurant.jpg") center/cover;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 60%;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.booking-content {
+  margin: 5px;
+}
+
+input {
+  display: block;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  padding: 10px;
+  margin: 4px 0 10px 0;
+  border: 1px solid #f4ce14;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+select,
+textarea {
+  display: block;
+  justify-content: space-between;
+  width: 85%;
+  align-items: center;
+  padding: 10px;
+  margin: 4px 0 10px 0;
+  border: 1px solid #f4ce14;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+  align-items: center;
+  text-align: justify;
+  width: 90%;
+  font-size: 10px;
+  padding-top: 15px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Confirmation */
+
+.confirmation-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin: 50px 0px 50px 0px;
+}
+
+.confirmation-content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 4 / span 6;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), no-repeat,
+    url("../../images/restaurant.jpg") center/cover;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.confirmation-content h2 {
+  color: white;
+  font-family: "Markazi Text";
+  font-size: 40px;
+  font-weight: normal;
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.confirmation-content p {
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0px 5px 5px 5px;
+}
+
+.confirmation-content ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline-start: 0px;
+  margin-bottom: 20px;
+}
+.confirmation-content li {
+  list-style-type: none;
+  color: #f4ce14;
+  font-family: "Karla";
+  font-weight: medium;
+  font-size: 20px;
+  margin: 15px 5px 15px 5px;
+}
+
+.no-booking {
+  color: #f4ce14;
+  font-family: "Markazi Text";
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  text-align: center;
+}

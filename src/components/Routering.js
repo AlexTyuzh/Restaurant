@@ -1,16 +1,19 @@
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./Homepage";
-import About from "./About";
+import HomePage from "../pages/homepage/Homepage";
+import About from "../pages/homepage/About";
+import BookingPage from "../pages/reservation/BookingPage";
+import Confirmation from "../pages/reservation/Confirmation";
 
 function Routering() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />}></Route>
-      {/* <Route path="/menu" element={<Menu />}></Route>
-        <Route path="/reservation" element={<Reservation />}></Route>
-        <Route path="/orderOnline" element={<OrderOnline />}></Route> */}
-      <Route path="/about" element={<About />}></Route>
-      {/* <Route path="/logIn" element={<LogIn />}></Route> */}
+      <Route path="/" element={<HomePage />} />
+      {/* <Route path="/menu" element={<Menu />}/> */}
+      <Route path="/reservation" element={<BookingPage />} />
+      <Route path="/confirmation" element={<Confirmation />} />
+      {/* <Route path="/orderOnline" element={<OrderOnline />}/>*/}
+      <Route path="/about" element={<About />} />
+      {/* <Route path="/logIn" element={<LogIn />}/> */}
     </Routes>
   );
 }
