@@ -1,10 +1,21 @@
 import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import Hamburger from "../images/Hamburger.png";
 function Nav() {
+  // const [isOpen, setIsOpen] = useState(false);
+
+  // const toggleMenu = () => {
+  //   setIsOpen(!isOpen);
+  // };
+
   return (
     <nav className="nav">
-      <ul>
+      {/* <div className="hamburger" onClick={toggleMenu}>
+        <img src={Hamburger} alt="Menu" className="hamburger-img" />
+      </div> */}
+      <ul /*className={`nav-links ${isOpen ? "open" : ""}`}*/>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" /*onClick={() => setIsOpen(false)}*/>Home</Link>
         </li>
         <li>
           <Link to="/">Menu</Link>

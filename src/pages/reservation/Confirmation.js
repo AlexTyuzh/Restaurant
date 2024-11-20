@@ -13,15 +13,16 @@ const Confirmation = () => {
   return (
     <div className="confirmation-container">
       <div className="confirmation-content">
-        <h2>Your Reservation is Confirmed!</h2>
+        <h2>Your reservation is confirmed!</h2>
         <div>
           <ul>
             <div>
               <p>
                 Thank you, {firstName} {lastName} for reserving a table at
                 Little Lemon!
+                <br />
+                Please see the details of your reservation below:
               </p>
-              <p>Please see the details of your reservation below:</p>
               <li>Date: {date} </li>
               <li>Time: {time}</li>
               <li>Number of Guests: {guests} </li>

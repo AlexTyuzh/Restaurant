@@ -2,7 +2,7 @@ import Avatar1 from "../../images/Avatar1.jpg";
 import Avatar2 from "../../images/Avatar2.jpg";
 import Avatar3 from "../../images/Avatar3.jpg";
 import Avatar4 from "../../images/Avatar4.jpg";
-
+import "./HomePage.css";
 import TestimonialCard from "./TestimonialCard";
 
 function Testimonials() {
@@ -38,7 +38,7 @@ function Testimonials() {
   ];
 
   return (
-    <div className="testimonials">
+    <section className="testimonials">
       <h2>Testimonials</h2>
       <div className="testimonial-cards">
         {reviews.map((review, index) => (
@@ -51,7 +51,7 @@ function Testimonials() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

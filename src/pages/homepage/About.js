@@ -5,7 +5,7 @@ import "./HomePage.css";
 function About() {
   return (
     <>
-      <div className="about">
+      <div className="about" id="about">
         <div className="about-content">
           <h1>Little Lemon</h1>
           <h2>Chicago</h2>

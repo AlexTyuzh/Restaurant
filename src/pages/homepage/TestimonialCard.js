@@ -1,3 +1,5 @@
+import "./HomePage.css";
+
 function TestimonialCard({ avatar, reviewerName, reviewText, rating }) {
   return (
     <div className="testimonial-card">
