@@ -101,6 +101,7 @@ function RegestrationForm() {
               <PasswordErrorMessage />
             ) : null}
           </div>
+
           <div className="field">
             <label>
               Role <sup>*</sup>
