@@ -52,8 +52,8 @@ function Specials() {
           />
         ))}
       </div>
-      <Link className="button" to="/">
-        <button id="button" to="/">
+      <Link className="button" to="/orderonline">
+        <button id="button" to="/orderonline">
           Order Online
         </button>
       </Link>

@@ -37,7 +37,7 @@ select {
 
 /* Button */
 
-button {
+#button {
   background-color: #f4ce14;
   color: #000;
   font-family: "Karla", sans-serif;
@@ -54,16 +54,18 @@ button {
   color: #333;
 }
 
-button:hover {
+#button:hover {
   cursor: pointer;
   background-color: #f49a14;
 }
+
+/* Header */
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 6rem;
+  padding: 1em 7rem;
 }
 
 .logo {
@@ -89,7 +91,7 @@ button:hover {
   color: #495e57;
   font-family: "Karla", sans-serif;
   font-weight: 700;
-  transition: 0.2s;
+  transition: 0.15s;
   padding: 1em 0em 1em 0em;
 }
 
@@ -98,20 +100,9 @@ button:hover {
   text-shadow: #333 1px 10px 10px;
 }
 
-.hamburger {
-  display: none; /* Default hidden */
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block; /* Show on small screens */
-  }
-}
-
 /* Footer */
 footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: start;
   background-color: #495e57;
@@ -151,20 +142,25 @@ footer {
   padding-left: 0;
   transition: 0.2s;
 }
+
+.ul-footer a img {
+  filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+}
+
+.li-footer-socials {
+  display: inline-block;
+  padding-left: 1rem;
+}
+
 .ul-footer a:hover {
   color: #f4ce14;
-  padding-left: 2px;
+  padding-left: 0.2rem;
 }
 
 @media (max-width: 768px) {
   h1 {
     font-size: 2rem;
     text-align: center;
-  }
-
-  .header {
-    flex-direction: column;
-    align-items: center;
   }
 
   .nav ul {
@@ -176,12 +172,28 @@ footer {
     text-align: center;
   }
 
+  .logo-footer {
+    padding: 0 1rem;
+    width: 30%;
+  }
+
   .div-footer {
     margin: 1rem 0;
     align-items: center;
   }
 
-  button {
+  .footer-head {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .ul-footer {
+    list-style-type: none;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  #button {
     width: 100%;
   }
 }
@@ -189,6 +201,11 @@ footer {
 @media (max-width: 480px) {
   h1 {
     font-size: 1.5rem;
+  }
+
+  .header {
+    justify-content: space-between;
+    padding: 1rem 4rem;
   }
 
   .logo {
@@ -199,7 +216,24 @@ footer {
     font-size: 0.8rem;
   }
 
-  button {
+  .footer-head {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .ul-footer {
+    list-style-type: none;
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .logo-footer {
+    display: none;
+    padding: 0 1rem;
+    width: 30%;
+  }
+
+  #button {
     font-size: 16px;
   }
 }

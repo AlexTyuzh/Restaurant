@@ -17,13 +17,13 @@ const Footer = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">Menu</Link>
+            <Link to="/menu">Menu</Link>
           </li>
           <li>
             <Link to="/reservation">Reservation</Link>
           </li>
           <li>
-            <Link to="/">Order online</Link>
+            <Link to="/orderonline">Order online</Link>
           </li>
           <li>
             <Link to="/about">About</Link>
@@ -44,17 +44,17 @@ const Footer = () => {
       <div className="div-footer">
         <h5 className="footer-head">Social Media</h5>
         <ul className="ul-footer">
-          <li>
+          <li className="li-footer-socials">
             <a href="https://www.instagram.com/" title="instagram logo icons">
               <img src={Instagram} alt="instagram" width="20px" />
             </a>
           </li>
-          <li>
+          <li className="li-footer-socials">
             <a href="https://www.facebook.com/" title="facebook logo icons">
               <img src={Facebook} alt="facebook" width="20px" />
             </a>
           </li>
-          <li>
+          <li className="li-footer-socials">
             <a href="https://www.twitter.com/" title="twitter logo icons">
               <img src={X} alt="twitter" width="20px" />
             </a>

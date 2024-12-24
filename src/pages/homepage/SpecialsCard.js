@@ -13,7 +13,7 @@ function SpecialsCard({ image, title, price, description, delivery, altText }) {
         </div>
         <p className="card-description">{description}</p>
         <div className="card-delivery">
-          <Link className="button" to="/">
+          <Link className="button" to="/orderonline">
             {delivery}
             <img src={Delivery} alt="delivery img" className="delivery-img" />
           </Link>
